@@ -12,7 +12,7 @@ const TodoItem = ({ todo, deleteTodo, updateState }) => {
     <article className='flex gap-4 border-b-gray-400 border-b'>
 
       <button onClick={() => updateState(id)}
-        className={`w-5 h-5 rounded-full border-2 border-gray-400
+        className={`w-4 h-4 m-auto rounded-full border-2 border-gray-400
         ${completed
             ? "flex justify-center items-center bg-gradient-to-br from-pink-500 via-purple-500 to-indigo-500"
             : "inline-block"
