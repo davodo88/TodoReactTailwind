@@ -6,7 +6,7 @@ import TodoItem from "./todoItem"
 
 const TodoList = ({ todos, deleteTodo, updateState }) => {
   return (
-    <div className="bg-white mt-8 rounded-md [&>article]:p-4">
+    <div className="bg-white dark:bg-black mt-8 rounded-md [&>article]:p-4">
       {todos.map((todo) => (
         <TodoItem key={todo.id} todo={todo} deleteTodo={deleteTodo}
           updateState={updateState} />
