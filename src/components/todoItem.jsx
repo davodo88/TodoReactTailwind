@@ -9,7 +9,8 @@ const TodoItem = ({ todo, deleteTodo, updateState }) => {
 
 
   return (
-    <article className='flex gap-4 dark:bg-gray-800 dark:rounded-md  border-b-gray-400 border-b'>
+    <article className='flex gap-4  overflow-hidden transition-all duration-1000 bg-white dark:bg-black
+      dark:rounded-md  border-b-gray-400 border-b'>
       <button onClick={() => updateState(id)}
         className={`w-4 h-4 m-auto rounded-full border-2 border-gray-400
         ${completed

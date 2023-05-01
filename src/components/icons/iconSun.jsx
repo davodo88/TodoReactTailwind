@@ -1,9 +1,9 @@
 const IconSun = ({ ...props }) => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg"
-      width="26"
-      height="26"
-      fill="#FFF"
+      width="28"
+      height="28"
+      fill="#ff4f"
       fillRule="evenodd"
       {...props}
     >
