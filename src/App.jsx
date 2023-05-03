@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { DragDropContext, Droppable, Draggable } from '@hello-pangea/dnd'
+import { DragDropContext } from '@hello-pangea/dnd'
 import Header from './components/header'
 import TodoComputed from './components/todoComputed'
 import TodoCreate from './components/todoCreate'
@@ -118,7 +118,7 @@ const App = () => {
       </main>
 
       <footer className="text-center mt-8">
-        drag & drop footer
+        App tasks drag & drop
       </footer>
     </div>
   )
