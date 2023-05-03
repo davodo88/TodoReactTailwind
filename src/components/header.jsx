@@ -6,9 +6,13 @@ const Header = () => {
 
   const initialStateDarkMode = localStorage.getItem('theme') === 'dark'
 
+  const fecha = Date.now()
+  const hoy = new Date(fecha)
+
 
   const [darkMode, setDarkMode] = useState(initialStateDarkMode)
   const reffHeader = useRef(null)
+
 
   useEffect(() => {
 
@@ -23,13 +27,21 @@ const Header = () => {
   }, [darkMode]);
 
 
+
+
   return (
     <header ref={reffHeader} className="container md:max-w-2xl pt-8 mx-auto px-4 ">
       <div className="flex justify-between ">
-        <h1 className="uppercase font-semibold tracking-[0.3em] transition-all duration-1000
+        <div>
+          <h1 className="uppercase font-semibold tracking-[0.3em] transition-all duration-1000
             text-left text-4xl text-gray-200 dark:text-white">
-          todo
-        </h1>
+            task
+          </h1>
+          <h3 className='font-semibold tracking-[0.3em] transition-all duration-1000
+            text-lg flex justify-center text-gray-200 dark:text-white'>
+            {`${hoy.toLocaleDateString()}`}
+          </h3>
+        </div>
         <button onClick={() => setDarkMode(!darkMode)}>
           {
             darkMode ? <IconSun /> : <IconMoon />
